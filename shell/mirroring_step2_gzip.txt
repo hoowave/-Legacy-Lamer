@@ -1,0 +1,4 @@
+rm -f /var/www/html/file/*
+cd /var/www/html/file/
+tar -zcvf result.tar.gz ./*
+find . ! -name result.tar.gz -delete

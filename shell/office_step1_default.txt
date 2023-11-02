@@ -1,0 +1,7 @@
+killall john 
+cd /var/www/html/file/ 
+wget -P ./ -m http://192.168.0.186:8090/project/files/pwtestfile.pptx 
+/root/JohnTheRipper/run/office2john.py /var/www/html/file/192.168.0.186:8090/project/files/pwtestfile.pptx > ./hash.txt 
+/root/JohnTheRipper/run/john ./hash.txt 
+/root/JohnTheRipper/run/john ./hash.txt --show > ./password.txt 
+find . ! -name password.txt -delete

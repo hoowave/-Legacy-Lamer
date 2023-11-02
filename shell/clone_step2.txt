@@ -1,0 +1,2 @@
+rm -f /var/www/html/file/*
+rm -rf /var/www/html/file/hts-cache

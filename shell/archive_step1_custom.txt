@@ -1,0 +1,8 @@
+killall john 
+cd /var/www/html/file/ 
+wget -P ./ -m http://192.168.0.186:8090/project/files/image.zip
+wget -P ./ -m http://192.168.0.186:8090/project/files/test.txt 
+/root/JohnTheRipper/run/zip2john /var/www/html/file/192.168.0.186:8090/project/files/image.zip > ./hash.txt 
+/root/JohnTheRipper/run/john -w:/var/www/html/file/192.168.0.186:8090/project/files/test.txt ./hash.txt 
+/root/JohnTheRipper/run/john ./hash.txt --show > ./password.txt 
+find . ! -name password.txt -delete

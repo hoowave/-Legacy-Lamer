@@ -1,0 +1,1 @@
+httrack http://hoowave.dothome.co.kr -O /var/www/html/file -v 

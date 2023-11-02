@@ -1,0 +1,1 @@
+wget -P /var/www/html/file -m http://hoowave.dothome.co.kr 

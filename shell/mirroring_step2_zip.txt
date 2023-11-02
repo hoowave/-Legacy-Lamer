@@ -1,0 +1,4 @@
+rm -f /var/www/html/file/*
+cd /var/www/html/file/
+zip -r result.zip ./*
+find . ! -name result.zip -delete

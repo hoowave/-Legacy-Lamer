@@ -1,0 +1,1 @@
+crunch 4 4 0123456789abcdefghijklmnopqrstuvwxyz -o /var/www/html/file/result.txt 
